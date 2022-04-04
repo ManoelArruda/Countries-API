@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Country</title>
+</head>
+<body>
+  <header>
+    <div class="containerMenu">
+      <div class="left">
+        <h2>Where in the World?</h2>
+      </div>
+      <div class="right">
+        <img src="assets/images/lua.jpg" width="25px" alt="">
+        <button onclick="darkMode()">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+  <section class="actions">
+    <div class="containerActions">
+      <div class="leftActions">
+        <div class="search">
+          <img src="assets/images/lupa.png" width="20px" align="center" alt="Lupa, símbolo para pesquisa">
+          <input type="text" placeholder="Search for a country..." />
+        </div>
+      </div>
+      <div class="rightActions">
+        <select id="estado">
+          <option value="all">Filter by Region</option>
+          <option value="Europa">Europa</option>
+          <option value="Oceania">Oceania</option>
+          <option value="America">America</option>
+          <option value="Africa">Africa</option>
+          <option value="Asia">Asia</option>
+        </select>
+      </div>
+    </div>
+  </section>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
