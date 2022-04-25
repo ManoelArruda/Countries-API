@@ -8,27 +8,27 @@
   <title>Country</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <div class="containerMenu">
       <div class="left">
-        <h2>Where in the World?</h2>
+        <h2 id="titlePage">Where in the World?</h2>
       </div>
-      <div class="right">
+      <div class="right" id="right">
         <img src="assets/images/lua.jpg" width="25px" alt="">
         <button onclick="darkMode()">Dark Mode</button>
       </div>
     </div>
   </header>
-  <section class="actions">
+  <section class="actions" id="actions">
     <div class="containerActions">
       <div class="leftActions">
-        <div class="search">
+        <div class="search" id="search">
           <img src="assets/images/lupa.png" width="20px" align="center" alt="Lupa, símbolo para pesquisa">
           <input type="text" placeholder="Search for a country..." />
         </div>
       </div>
       <div class="rightActions">
-        <select id="estado">
+        <select id="localization">
           <option value="all">Filter by Region</option>
           <option value="Europa">Europa</option>
           <option value="Oceania">Oceania</option>
@@ -40,7 +40,7 @@
     </div>
   </section>
   <section class="countries" id="countries">
-      <article class="card">
+      <article class="card" id="card">
         <img src="" alt="" class="imgCountry" id="imgCountry" />
         <p id="titleCountries" class="titleCountries"></p>
         <p class="infos" id="infos">Population: <span class="population" id="population"></span></p>
@@ -49,5 +49,7 @@
       </article>
   </section>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/dark-mode.js"></script>
+
 </body>
 </html>

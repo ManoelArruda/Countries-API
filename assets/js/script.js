@@ -19,7 +19,7 @@ function pegarDados(i){
             console.log("Erro ao acessar o JSON")
             return
         }
-         console.log(dados)
+        // console.log(dados)
         // Quantidade de lutadores
         let qtdCountries = (dados.length)
         //console.log(dados);
@@ -129,6 +129,6 @@ pegarDados(0)
 
 // 2a carta em diante desenhamos em tela usando as funcoes
 //desenharCarta(0)
-for(let p = 0; p <=249; p++){
+for(let p = 0; p <= 249; p++){
   desenharCarta(p);
 }
