@@ -129,18 +129,6 @@ pegarDados(0)
 
 // 2a carta em diante desenhamos em tela usando as funcoes
 //desenharCarta(0)
-desenharCarta(1)
-desenharCarta(2)
-desenharCarta(3)
-desenharCarta(4)
-desenharCarta(5)
-desenharCarta(6)
-desenharCarta(7)
-desenharCarta(8)
-desenharCarta(9)
-desenharCarta(10)
-desenharCarta(11)
-desenharCarta(12)
-desenharCarta(13)
-desenharCarta(14)
-desenharCarta(15)
+for(let p = 0; p <=249; p++){
+  desenharCarta(p);
+}

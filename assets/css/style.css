@@ -157,4 +157,8 @@ span{
   .containerActions{
     flex-direction: column;
   }
+  .card{
+    width: 250px;
+    height: 290px;
+  }
 }
