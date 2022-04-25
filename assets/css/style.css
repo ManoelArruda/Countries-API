@@ -129,7 +129,7 @@ select{
 }
 .infos{
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   padding-bottom: 10px;
 }
@@ -138,7 +138,8 @@ p,span{
   margin-left: 10px;
 }
 span{
-  line-height: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 30px;
 }
 
 @media (max-width: 500px) and (min-width: 375px) {
