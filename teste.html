@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="content"></div>
+<button id="lmbutton" onclick="loadmore()">Load More</button>
+<script>
+    var items = ["one", "twp", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+    var currentindex = 0
+    function loadmore(){
+    var maxresult = 2
+        for(var i = 0; i < maxresult; i++){
+            if(currentindex >= items.length){
+                $("#lmbutton").hide()
+                return
+            }
+            $("#content").append("<div>"+items[i+currentindex]+"</div>")
+        }
+        currentindex += maxresult
+    }
+    loadmore()
+</script>
+</body>
+</html>

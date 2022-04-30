@@ -11,6 +11,7 @@ function darkMode() {
   var region = document.getElementsByClassName(".region");
   var capital = document.getElementsByClassName(".capital");
   var titleCountries = document.getElementsByClassName(".titleCountries");
+  var loadMore = document.getElementsByClassName(".loadMore");
 
   h2.classList.toggle("dark-mode");
   header.classList.toggle("dark-mode");
@@ -25,4 +26,5 @@ function darkMode() {
   region.classList.toggle("dark-mode");
   capital.classList.toggle("dark-mode");
   titleCountries.classList.toggle("dark-mode");
+  loadMore.classList.toggle("dark-mode");
 }

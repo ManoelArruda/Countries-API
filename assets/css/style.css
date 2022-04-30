@@ -132,14 +132,32 @@ select{
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
+  padding: 5px 0px;
 }
-
-p,span{
+p{
   margin-left: 10px;
 }
-span{
+.loadMore{
+  background-color: hsl(0, 0%, 98%);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnloadmore{
+  height: 40px;
+  width: 150px;
+  background-color: transparent;
+  color: hsl(200, 15%, 8%);
   font-family: 'Nunito Sans', sans-serif;
-  line-height: 30px;
+  font-size: 18px;
+  border: 1px solid hsl(200, 15%, 8%);
+  padding: 10px;
+  cursor: pointer;
+}
+.lua-white{
+  display: none;
 }
 
 @media (max-width: 534px) and (min-width: 375px) {
@@ -215,6 +233,13 @@ background-color: transparent;
 .dark-mode .titleCountries{
   color: hsl(0, 0%, 100%);
 }
-
-
+.dark-mode .loadMore{
+  background-color: hsl(209, 23%, 22%);
+}
+.dark-mode .lua-black{
+  display: none;
+}
+.dark-mode .lua-white{
+  display: inline;
+}
 

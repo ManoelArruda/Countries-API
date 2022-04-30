@@ -8,47 +8,47 @@
   <title>Country</title>
 </head>
 <body>
-  <header id="header">
-    <div class="containerMenu">
-      <div class="left">
-        <h2 id="titlePage">Where in the World?</h2>
-      </div>
-      <div class="right" id="right">
-        <img src="assets/images/lua.jpg" width="25px" alt="">
-        <button onclick="darkMode()">Dark Mode</button>
-      </div>
-    </div>
-  </header>
-  <section class="actions" id="actions">
-    <div class="containerActions">
-      <div class="leftActions">
-        <div class="search" id="search">
-          <img src="assets/images/lupa.png" width="20px" align="center" alt="Lupa, símbolo para pesquisa">
-          <input type="text" placeholder="Search for a country..." />
+    <header id="header">
+      <div class="containerMenu">
+        <div class="left">
+          <h2 id="titlePage">Where in the World?</h2>
+        </div>
+        <div class="right" id="right">
+          <img class="lua-black" src="assets/images/lua-black.png" width="25px" alt="" />
+          <img class="lua-white" src="assets/images/lua-white.png" width="25px" alt="" />
+          <button onclick="darkMode()">Dark Mode</button>
         </div>
       </div>
-      <div class="rightActions">
-        <select id="localization">
-          <option value="all">Filter by Region</option>
-          <option value="Europa">Europa</option>
-          <option value="Oceania">Oceania</option>
-          <option value="America">America</option>
-          <option value="Africa">Africa</option>
-          <option value="Asia">Asia</option>
-        </select>
+    </header>
+    <section class="actions" id="actions">
+      <div class="containerActions">
+        <div class="leftActions">
+          <div class="search" id="search">
+            <img src="assets/images/lupa.png" width="20px" align="center" alt="Lupa, símbolo para pesquisa" />
+            <input type="text" placeholder="Search for a country..." />
+          </div>
+        </div>
+        <div class="rightActions">
+          <select id="localization" class="localization">
+            <option value="all">Filter by Region</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+            <option value="America">America</option>
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+          </select>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="countries" id="countries">
-      <article class="card" id="card">
-        <img src="" alt="" class="imgCountry" id="imgCountry" />
-        <p id="titleCountries" class="titleCountries"></p>
-        <p class="infos" id="infos">Population: <span class="population" id="population"></span></p>
-        <p class="infos" id="infos">Region: <span class="region" id="region"></span></p>
-        <p class="infos" id="infos">Capital: <span class="capital" id="capital"></span></p>
-      </article>
-  </section>
-<script src="assets/js/script.js"></script>
+    </section>
+    
+    <section class="countries" id="countries"></section>
+
+    <section class="loadMore">
+      <button class="btnloadmore" onclick="loadMore()">Carregar Mais</button>
+    </section>
+
+
+<script src="assets/js/btn-load-more.js"></script>
 <script src="assets/js/dark-mode.js"></script>
 
 </body>
