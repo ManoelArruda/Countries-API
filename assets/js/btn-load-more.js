@@ -56,7 +56,7 @@ function designCard(country) {
 
 function loadMore(){
   var getlastindice=lastindice;
-  for(var i = getlastindice+1; i < getlastindice+9; i++){
+  for(var i = getlastindice+1; i < getlastindice+11; i++){
     var country = totalCountries[i];
     designCard(country);
     lastindice=i;
@@ -67,7 +67,7 @@ var totalCountries, lastindice;
 getCountry()
   .then((countries) => {
     totalCountries=countries;
-    for(var i = 0; i < 8; i++){
+    for(var i = 0; i < 10; i++){
       var country = totalCountries[i];
       designCard(country);
       lastindice=i;
