@@ -29,27 +29,27 @@
           </div>
         </div>
         <div class="rightActions">
-          <select id="localization" class="localization">
+          <select id="localization" class="localization" onchange="filter()">
             <option value="all">Filter by Region</option>
-            <option value="Europe">Europe</option>
-            <option value="Oceania">Oceania</option>
-            <option value="America">America</option>
-            <option value="Africa">Africa</option>
-            <option value="Asia">Asia</option>
+            <option value="Region: Europe">Europe</option>
+            <option value="Region: Oceania">Oceania</option>
+            <option value="Region: Americas">America</option>
+            <option value="Region: Africa">Africa</option>
+            <option value="Region: Asia">Asia</option>
           </select>
+          <p id="demo"></p>
         </div>
       </div>
     </section>
-    
     <section class="countries" id="countries"></section>
 
     <section class="loadMore">
-      <button class="btnloadmore" onclick="loadMore()">Carregar Mais</button>
+      <button class="btnloadmore" onclick="loadMore(),filter()">Carregar Mais</button>
     </section>
-
 
 <script src="assets/js/btn-load-more.js"></script>
 <script src="assets/js/dark-mode.js"></script>
+<script src="assets/js/filter-region.js"></script>
 
 </body>
 </html>
