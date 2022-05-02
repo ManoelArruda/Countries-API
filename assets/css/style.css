@@ -184,7 +184,9 @@ p{
 
 
 /* DARK MODE */
-
+.dark-mode#body{
+  background-color: hsl(207, 26%, 17%);
+}
 .dark-mode #header{
   background-color:  hsl(209, 23%, 22%);
   border: none;
@@ -206,6 +208,9 @@ p{
 background-color: transparent;
 }
 .dark-mode #search input::placeholder{
+  color: hsl(0, 0%, 100%);
+}
+.dark-mode #inputsearch{
   color: hsl(0, 0%, 100%);
 }
 .dark-mode #localization{
@@ -235,7 +240,11 @@ background-color: transparent;
   color: hsl(0, 0%, 100%);
 }
 .dark-mode .loadMore{
-  background-color: hsl(209, 23%, 22%);
+  background-color: hsl(207, 26%, 17%);
+}
+.dark-mode .btnloadmore{
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 .dark-mode .lua-black{
   display: none;
