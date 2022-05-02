@@ -185,39 +185,34 @@ p{
 
 /* DARK MODE */
 
-.dark-mode#header{
+.dark-mode #header{
   background-color:  hsl(209, 23%, 22%);
   border: none;
 }
-.dark-mode .oi{
-  background-color: transparent;
-  height: 100px;
-  width: 100%;
-}
-.dark-mode#titlePage{
+.dark-mode #titlePage{
   color: hsl(0, 0%, 100%);
 }
-.dark-mode#right button{
+.dark-mode #right button{
   color: hsl(0, 0%, 100%);
 }
-.dark-mode#actions{
+.dark-mode #actions{
   background-color: hsl(207, 26%, 17%);
 }
-.dark-mode#search{
+.dark-mode #search{
   background-color: hsl(209, 23%, 22%);
   box-shadow: none;
 }
-.dark-mode#search input{
+.dark-mode #search input{
 background-color: transparent;
 }
-.dark-mode#search input::placeholder{
+.dark-mode #search input::placeholder{
   color: hsl(0, 0%, 100%);
 }
-.dark-mode#localization{
+.dark-mode #localization{
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
 }
-.dark-mode#countries{
+.dark-mode #countries{
   background-color: hsl(207, 26%, 17%);
 }
 .dark-mode .card{

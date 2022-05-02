@@ -12,14 +12,4 @@ function filter(){
     item.style.display = region === select ? "block" : "none";
       
   })
-
-  /* for(let i = 0; i < card.length; i++){
-    if(region[i].textContent === select){
-      card[i].style.display = "block"
-    }else if(region[i].textContent !== select){
-      card[i].style.display = "none"
-    }else if(card[i].style.display = "none"){
-      card[i].style.display = "block"
-    }
-  } */
 }
