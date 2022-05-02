@@ -43,7 +43,7 @@ function designCard(country) {
     // REGION TITLE
     var region = document.createElement("p")
     region.setAttribute('class', 'infos')
-    region.setAttribute('class', 'region')
+    region.classList.add("region")
     card.appendChild(region)
     region.textContent = "Region: " + country.region;
 

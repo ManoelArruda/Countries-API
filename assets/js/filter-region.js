@@ -1,16 +1,16 @@
 function filter(){
   const select = document.getElementById("localization").value;
   const card = document.querySelectorAll(".card");
-  const region = document.querySelectorAll(".region");
-  card.forEach((item,index) => {
-    
-    if(region[index].textContent === select){
+ 
+  card.forEach((item) => {
+    if(select === "all"){
       item.style.display = "block";
-    }else if(region[index].textContent !== select){
-      item.style.display = "none"
-    }else{
-      item.style.display = "block"; 
+      return;
     }
+    var region = item.querySelector(".region").textContent;
+
+    item.style.display = region === select ? "block" : "none";
+      
   })
 
   /* for(let i = 0; i < card.length; i++){

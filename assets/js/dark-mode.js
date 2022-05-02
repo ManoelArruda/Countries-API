@@ -5,13 +5,14 @@ function darkMode() {
   var actions = document.getElementById('actions');
   var select = document.getElementById('localization');
   var countries = document.getElementById('countries');
-  var card = document.getElementsByClassName('.card');
+  var card = document.getElementsByClassName(".card");
   var infos = document.getElementsByClassName('.infos');
   var population = document.getElementsByClassName(".population");
   var region = document.getElementsByClassName(".region");
   var capital = document.getElementsByClassName(".capital");
   var titleCountries = document.getElementsByClassName(".titleCountries");
   var loadMore = document.getElementsByClassName(".loadMore");
+  var body = document.getElementById("body");
 
   h2.classList.toggle("dark-mode");
   header.classList.toggle("dark-mode");
@@ -27,4 +28,5 @@ function darkMode() {
   capital.classList.toggle("dark-mode");
   titleCountries.classList.toggle("dark-mode");
   loadMore.classList.toggle("dark-mode");
+  body.classList.toggle("dark-mode"); 
 }

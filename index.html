@@ -7,16 +7,16 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Country</title>
 </head>
-<body>
+<body id="body">
     <header id="header">
       <div class="containerMenu">
         <div class="left">
           <h2 id="titlePage">Where in the World?</h2>
         </div>
         <div class="right" id="right">
-          <img class="lua-black" src="assets/images/lua-black.png" width="25px" alt="" />
-          <img class="lua-white" src="assets/images/lua-white.png" width="25px" alt="" />
-          <button onclick="darkMode()">Dark Mode</button>
+          <img class="lua-black" src="assets/images/lua-black.png" width="25px" alt="Lua" />
+          <img class="lua-white" src="assets/images/lua-white.png" width="25px" alt="lua" />
+          <button id="btn-dark-mode" onclick="darkMode()">Dark Mode</button>
         </div>
       </div>
     </header>
@@ -25,7 +25,7 @@
         <div class="leftActions">
           <div class="search" id="search">
             <img src="assets/images/lupa.png" width="20px" align="center" alt="Lupa, símbolo para pesquisa" />
-            <input type="text" placeholder="Search for a country..." />
+            <input type="text" id="inputsearch" placeholder="Search for a country..." />
           </div>
         </div>
         <div class="rightActions">
@@ -37,12 +37,10 @@
             <option value="Region: Africa">Africa</option>
             <option value="Region: Asia">Asia</option>
           </select>
-          <p id="demo"></p>
         </div>
       </div>
     </section>
     <section class="countries" id="countries"></section>
-
     <section class="loadMore">
       <button class="btnloadmore" onclick="loadMore(),filter()">Carregar Mais</button>
     </section>
@@ -50,6 +48,7 @@
 <script src="assets/js/btn-load-more.js"></script>
 <script src="assets/js/dark-mode.js"></script>
 <script src="assets/js/filter-region.js"></script>
+<script src="assets/js/filter-country.js"></script>
 
 </body>
 </html>

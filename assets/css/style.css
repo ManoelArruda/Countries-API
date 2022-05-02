@@ -5,7 +5,9 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 /* inicio menu */
-
+body{
+  background-color: hsl(0, 0%, 98%);  
+}
 header{
   width: 100%;
   height: 70px;
@@ -138,7 +140,6 @@ p{
   margin-left: 10px;
 }
 .loadMore{
-  background-color: hsl(0, 0%, 98%);
   width: 100%;
   height: 50px;
   display: flex;
@@ -187,6 +188,11 @@ p{
 .dark-mode#header{
   background-color:  hsl(209, 23%, 22%);
   border: none;
+}
+.dark-mode .oi{
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
 }
 .dark-mode#titlePage{
   color: hsl(0, 0%, 100%);
@@ -242,4 +248,3 @@ background-color: transparent;
 .dark-mode .lua-white{
   display: inline;
 }
-
