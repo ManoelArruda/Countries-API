@@ -3,10 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="assets/css/info-country.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Details Country</title>
 </head>
-<body>
-  
+<body id="body">
+  <header id="header">
+    <div class="containerMenu">
+      <div class="left">
+        <h2 id="titlePage">Where in the World?</h2>
+      </div>
+      <div class="right" id="right">
+        <img class="lua-black" src="assets/images/lua-black.png" width="25px" alt="Lua" />
+        <img class="lua-white" src="assets/images/lua-white.png" width="25px" alt="lua" />
+        <button id="btn-dark-mode" onclick="darkMode()">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+  <section class="actions" id="actions">
+    <div class="containerActions">
+      <a href="index.html" class="btn-back">
+        <img src="assets/images/seta.png" class="seta-black" alt="Seta para voltar a página anterior"> 
+        <img src="assets/images/seta-white.png" class="seta-white" alt="Seta para voltar a página anterior">
+        Back</a>
+    </div>
+  </section>
+    <section id="result"></section>
+  <script src="assets/js/dark-mode.js"></script>
+  <script src="assets/js/info-country.js"></script>
+
+
+
 </body>
 </html>
