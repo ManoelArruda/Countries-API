@@ -1,4 +1,5 @@
 const sectionResult = document.getElementById("result");
+var urlCountry = 'https://restcountries.com/v2/name/';
 
 function buscarPais(link){
   fetch(link)
@@ -8,79 +9,21 @@ function buscarPais(link){
           console.log("Erro ao acessar o JSON")
           return
       }
-    console.log(response[0])
-    
-    response.forEach((item) => {
-      console.log(item.name)
-    let teste = document.createElement('div')
-    sectionResult.appendChild(teste)
-    teste.innerText = item.name
-    });
-    
+    console.log(response)
+    const pais = response[0];
+    const infCountries = document.getElementById("infCountries");
+
+    const img = document.createElement("img")
+    img.setAttribute('src', pais.flags.svg)
+    infCountries.appendChild(img)
   })
 }
-
-/* 
-var card = document.getElementById('containerCountries');
-  var urlCountry = 'https://restcountries.com/v2/name/';
-  var link;
-  card.addEventListener('click', getLink)
-
-  function getLink(e){
-    link = urlCountry + e.target.id
+function onload(){
   
-    
-
-    linkreal = fetch(link)
-    .then( response => response.json() )
-    .then( response => {
-        if(response.erro) {
-            console.log("Erro ao acessar o JSON")
-            return
-        }
-        return response
-         //console.log(response[0])
-       // console.log(response[0].name) 
-    })
-    linkreal.then((linkreal) =>{
-      console.log(linkreal[0])
-    })
-  } */
-/*   var card = document.getElementById('containerCountries');
-  var urlCountry = 'https://restcountries.com/v2/name/brazil';
-  var link = fetch(urlCountry).then(response => response.json()).then( response => {
-    if(response.erro) {
-        console.log("Erro ao acessar o JSON")
-        return
-    }
-    return response
-  });
-
-  link.then((response) => {
-    console.log(response)
-  }) */
-
-
-
-  /* var card = document.getElementById('containerCountries');
-  var urlCountry = 'https://restcountries.com/v2/name/';
-  var link;
-  card.addEventListener('click', getLink)
-  console.log(link)
-  function getLink(e){
-    link = urlCountry + e.target.id
-  
-    console.log(link)
-
-    return fetch(link)
-    .then( response => response.json() )
-    .then( response => {
-        if(response.erro) {
-            console.log("Erro ao acessar o JSON")
-            return
-        }
-        return response
-         //console.log(response[0])
-       // console.log(response[0].name) 
-    })
-  } */
+  const search = new URLSearchParams(window.location.search);
+  if(search.has('name')){
+    const searchName = search.get('name')
+    buscarPais(urlCountry+searchName)
+  }
+}
+document.addEventListener('DOMContentLoaded', onload);

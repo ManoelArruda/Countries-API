@@ -20,7 +20,7 @@ function designCard(country) {
 
     let link = document.createElement("a")
     link.setAttribute('id', country.name)
-   // link.setAttribute('href', 'info-country.html')
+    link.setAttribute('href', `info-country.html?name=${country.name}`)
     sectionCountries.appendChild(link)
 
     // CARD
@@ -86,16 +86,3 @@ getCountry()
       lastindice=i;
     }
   })
-/*/////////////////////////////////////////////////////////////////////////////*/
-
-  var card = document.getElementById('containerCountries');
-  var urlCountry = 'https://restcountries.com/v2/name/';
-var country;
-  card.addEventListener('click', getLink)
-
-  function getLink(e){
-    country = e.target.id
-console.log(urlCountry+ country)
-buscarPais( urlCountry+country );
-
-  }
