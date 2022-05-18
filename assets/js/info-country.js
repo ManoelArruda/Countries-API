@@ -176,7 +176,9 @@ function buscarPais(link){
 
     //INF LANGUAGES
     const infLanguages = document.createElement("span")
-    infLanguages.textContent = country.languages[0].name   
+    infLanguages.textContent = country.languages.map((item) =>{
+      return " " + item.name 
+    })   
     divLanguages.appendChild(infLanguages)
 
     //DIV AREA
@@ -198,9 +200,69 @@ function buscarPais(link){
 
     //BORDER COUNTRIES
     const boderCountries = document.createElement("p")
-    boderCountries.setAttribute('class', 'borderCountries')
+    boderCountries.setAttribute('class', 'titleBorderCountries')
     divBottom.appendChild(boderCountries)
-    boderCountries.innerText = "Border Countries"
+    boderCountries.innerText = "Border Countries:"
+
+    //DIV BORDERS
+    const divBorders = document.createElement("div")
+    divBorders.setAttribute('class', 'divBorders')
+    divBottom.appendChild(divBorders)
+
+    const borders1 = document.createElement("p")
+    borders1.setAttribute('class', 'bordersCountry')
+    divBorders.appendChild(borders1)
+    if(country.borders[0]){
+      borders1.textContent = country.borders.slice(0,1)
+    }else{
+      borders1.style.display = 'none';
+    }
+    
+    const borders2 = document.createElement("p")
+    borders2.setAttribute('class', 'bordersCountry')
+    divBorders.appendChild(borders2)
+    if(country.borders[1]){
+      borders2.textContent = country.borders.slice(1,2)
+    }else{
+      borders2.style.display = 'none';
+    }
+
+    const borders3 = document.createElement("p")
+    borders3.setAttribute('class', 'bordersCountry')
+    divBorders.appendChild(borders3)
+    if(country.borders[2]){
+      borders3.textContent = country.borders.slice(2,3)
+    }else{
+      borders3.style.display = 'none';
+    }
+
+    const borders4 = document.createElement("p")
+    borders4.setAttribute('class', 'bordersCountry')
+    divBorders.appendChild(borders4)
+    if(country.borders[3]){
+      borders4.textContent = country.borders.slice(3,4)
+    }else{
+      borders4.style.display = 'none';
+    }
+
+    const borders5 = document.createElement("p")
+    borders5.setAttribute('class', 'bordersCountry')
+    divBorders.appendChild(borders5)
+    if(country.borders[4]){
+      borders5.textContent = country.borders.slice(4,5)
+    }else{
+      borders5.style.display = 'none';
+    }
+
+    const borders6 = document.createElement("p")
+    borders6.setAttribute('class', 'bordersCountry')
+    divBorders.appendChild(borders6)
+    if(country.borders[5]){
+      borders6.textContent = country.borders.slice(5,6)
+    }else{
+      borders6.style.display = 'none';
+    }
+
   })
 }
 function onload(){
