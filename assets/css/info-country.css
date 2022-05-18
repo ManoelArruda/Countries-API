@@ -82,7 +82,69 @@ header h2{
   font-size: 18px;
   padding: 10px;
 }
-
+.infCountry{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerCountry{
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgcountry{
+  width: 50%;
+  height: 350px;
+}
+.article{
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.divLeft{
+  width: 50%;
+  height: 230px;
+}
+.divRight{
+  width: 50%;
+  height: 130px;
+  margin-top: 48px;
+}
+.divTop{
+  width: 100%;
+  display: flex;
+}
+.divBottom{
+  width: 100%;
+  background-color: blue;
+  height: 100px;
+}
+.titleCountry{
+  color: hsl(200, 15%, 8%);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.subtitle{
+  margin-right: 5px;
+  color: hsl(200, 15%, 8%);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.divItems{
+  display: flex;
+  margin-bottom: 15px;
+}
+span{
+  color: hsl(200, 15%, 8%);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
 /* DARK MODE */
 .dark-mode#body{
   background-color: hsl(207, 26%, 17%);
@@ -115,4 +177,23 @@ header h2{
 }
 .dark-mode .lua-white{
   display: inline;
+}
+
+@media (max-width: 534px) and (min-width: 375px) {
+
+  .imgcountry{
+    width: 90%;
+    height: 250px;
+  }
+  .containerCountry{
+    flex-direction: column;
+    align-items: center;
+  }
+  .article{
+    width: 90%;
+    margin-top: 30px;
+  }
+  .divTop{
+    flex-direction: column;
+  }
 }

@@ -1,6 +1,6 @@
 function filter(){
   const select = document.getElementById("localization").value;
-  const card = document.querySelectorAll(".card");
+  const card = document.querySelectorAll(".linkCard");
  
   card.forEach((item) => {
     if(select === "all"){

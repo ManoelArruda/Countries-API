@@ -4,7 +4,7 @@ const inputsearch = document.getElementById("inputsearch");
 inputsearch.addEventListener('keyup', filterCountry);
 
 function filterCountry(){
-  const card = document.querySelectorAll(".card");  
+  const card = document.querySelectorAll(".linkCard");  
 
   card.forEach((item) => {
   

@@ -19,14 +19,13 @@ function getCountry(){
 function designCard(country) {
 
     let link = document.createElement("a")
-    link.setAttribute('id', country.name)
+    link.setAttribute('class', 'linkCard')
     link.setAttribute('href', `info-country.html?name=${country.name}`)
     sectionCountries.appendChild(link)
 
     // CARD
     let card = document.createElement("article")
     card.setAttribute('class', 'card')
-    card.setAttribute('id', country.name)
     link.appendChild(card)
 
     // IMG CARD
@@ -34,27 +33,23 @@ function designCard(country) {
     card.appendChild(imagem)
     imagem.setAttribute('class', 'imgCountry')
     imagem.setAttribute('src', country.flags.svg)
-    imagem.setAttribute('id', country.name)
 
 
     // NAME COUNTRY
     let titleCountry = document.createElement("p")
     titleCountry.setAttribute('class', 'titleCountries')
-    titleCountry.setAttribute('id', country.name)
     card.appendChild(titleCountry)
     titleCountry.textContent = country.name;
 
     // POPULATION TITLE
     let population = document.createElement("p")
     population.setAttribute('class', 'infos')
-    population.setAttribute('id', country.name)
     card.appendChild(population)
     population.textContent = "Population: " + country.population;    
 
     // REGION TITLE
     var region = document.createElement("p")
     region.setAttribute('class', 'infos')
-    region.setAttribute('id', country.name)
     region.classList.add("region")
     card.appendChild(region)
     region.textContent = "Region: " + country.region;
@@ -62,7 +57,6 @@ function designCard(country) {
     // CAPITAL TITLE
     let capital = document.createElement("p")
     capital.setAttribute('class', 'infos')
-    capital.setAttribute('id', country.name)
     card.appendChild(capital)
     capital.textContent = "Capital: " + country.capital;
 }

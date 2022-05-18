@@ -115,17 +115,17 @@ select{
   flex-wrap: wrap;
   display: flex;
 }
-.link{
+.linkCard{
   text-decoration: none;
   color: hsl(200, 15%, 8%);
-}
-.card{
-  background-color: hsl(0, 0%, 100%);
+  margin: 30px;
   width: 215px;
   height: 270px;
+ }
+.card{
+  background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   box-shadow: 0px 3px 8px hsl(0, 0%, 52%, 50%);
-  margin: 30px;
 }
 .imgCountry{
   width: 100%;
@@ -183,15 +183,19 @@ p{
   header h2{
     font-size: 20px;
   }
-  .card{
+  .linkCard{
     margin-top: 50px;
   }
   .containerActions{
     flex-direction: column;
   }
-  .card{
+  .linkCard, .card{
     width: 250px;
     height: 295px;
+  }
+  .containerCountries{
+    justify-content: center;
+    align-items: center;
   }
 }
 
