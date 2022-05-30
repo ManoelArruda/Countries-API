@@ -17,10 +17,7 @@ function changeBG(event){
   const body = document.getElementById('body')
 
   if(ideventclick === btnDM){
-    console.log('clicou no botao') 
     localStorage.setItem('darkMode', body.classList.value)
   }
-
-
 }
 body.classList.value = localStorage.darkMode

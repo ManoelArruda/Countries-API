@@ -114,6 +114,8 @@ select{
   height: 100%;
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .linkCard{
   text-decoration: none;
