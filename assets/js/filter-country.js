@@ -1,7 +1,7 @@
-
-
 const inputsearch = document.getElementById("inputsearch");
 inputsearch.addEventListener('keyup', filterCountry);
+const btnLoadMore = document.querySelector('.btnloadmore')
+btnLoadMore.style.display = "block"
 
 function filterCountry(){
   const card = document.querySelectorAll(".linkCard");  
@@ -13,18 +13,15 @@ function filterCountry(){
     const userCountry = document.getElementById("inputsearch").value;
     const titleCountries = item.querySelector('.titleCountries').textContent;
 
-    if((userCountry === titleCountries.toUpperCase()) || 
-     (userCountry === titleCountries.toLowerCase()) ||
-     (userCountry === titleCountries)){
+    if ((titleCountries.toUpperCase().includes(userCountry.toUpperCase()))) {
         item.style.display = "block";
+        btnLoadMore.style.display = "none"
         return;
-      }else if((userCountry === "") || (userCountry === " ")){
+      }else if((userCountry === "") || (userCountry === " ") ){
         item.style.display = "block";
-        return;
+        btnLoadMore.style.display = "block"
       }
-      /* item.style.display = (titleCountries === userCountry) 
-      ||(userCountry === titleCountries.toLowerCase()) 
-      || (userCountry === titleCountries.toUpperCase()) ? "block" : "none"; */
       
   })
 }
+

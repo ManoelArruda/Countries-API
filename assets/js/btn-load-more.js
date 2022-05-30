@@ -45,10 +45,15 @@ function designCard(country) {
     let population = document.createElement("p")
     population.setAttribute('class', 'infos')
     card.appendChild(population)
-    population.textContent = "Population: " + country.population;    
+    population.textContent = "Population: "  
+   
+    let npopulation = document.createElement("span")
+    npopulation.setAttribute('class', 'npopulation')
+    population.appendChild(npopulation)
+    npopulation.textContent = country.population;    
 
     // REGION TITLE
-    var region = document.createElement("p")
+    let region = document.createElement("p")
     region.setAttribute('class', 'infos')
     region.classList.add("region")
     card.appendChild(region)
@@ -62,20 +67,19 @@ function designCard(country) {
 }
 
 function loadMore(){
-  var getlastindice=lastindice;
-  for(var i = getlastindice+1; i < getlastindice+13; i++){
-    var country = totalCountries[i];
+  let getlastindice=lastindice;
+  for(let i = getlastindice+1; i < getlastindice+13; i++){
+    let country = totalCountries[i];
     designCard(country);
     lastindice=i;
   }
 }
-// 1a carta pegamos os dados. Ela ja esta desenhada na tela
-var totalCountries, lastindice;
+let totalCountries, lastindice;
 getCountry()
   .then((countries) => {
     totalCountries=countries;
-    for(var i = 0; i < 12; i++){
-      var country = totalCountries[i];
+    for(let i = 0; i < 12; i++){
+      let country = totalCountries[i];
       designCard(country);
       lastindice=i;
     }
