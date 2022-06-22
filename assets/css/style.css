@@ -178,6 +178,9 @@ p{
 
 @media (max-width: 570px) {
 
+  #titlePage{
+    padding: 10px;
+  }
   .search{
     width: 300px;
     margin-top: 15px;
